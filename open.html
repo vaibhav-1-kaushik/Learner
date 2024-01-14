@@ -4,34 +4,46 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Type-Rush</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-<header>
-    <div id="flex">
-        <ul id="header">
-            <li id="list"><img src="#" alt="Logo"></li>
-            <li id="list"><h1>Type<span>Rush</span>
-            </h1></li>
-            <li id="list"><a href="#">Quit</a></li>
-        </ul>
-   </div>
-<div id="main" >
-    <div id="task">Type : <span id="u">Vaibhav</span></div>
-    <input type="text" placeholder="Type here" id="input">
 
-</div>
-</header>
- <footer>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- scoreboard -->
 
- </footer>      
-        
-        <script src=""></script>
-    </body>
+<body>
+    <div class="scoreboard">
+        <h3 id="bhaoo">Type <span>Rush</span></h3>
+        <h3 id="score">score :<span id="sc-re">00</span></h3>
+    </div>
+    <!-- peach of the ground is here -->
+    <div class="page">
+        <!-- task area -->
+        <div id="task">
+            Type : <span id="task-1">
+                <ul id="list">
+                    <li>rule 1 : one chance only to write </li>
+                    <li>rule 2 : Give input in time limit of 20</li>
+                    <li>rule 3 : After every correct input; prometted to next level were time limit is -1 then pevious
+                    </li>
+                </ul>
+            </span>
+        </div>
+
+        <!-- here we take input from user -->
+        <div id="input">
+            <!-- input area -->
+            <input type="text" placeholder="Type here" id="in-put" style="display:none;">
+            <input type="submit" placeholder="Type here" id="put" value="Start Game" onclick="Start()" display="block">
+            <input type="submit" onclick="submit()" id="in" style="display: none;">
+        </div>
+    </div>
+
+    <script src="connect.js"></script>
+</body>
+
 </html>
