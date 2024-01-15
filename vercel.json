@@ -1,7 +1,7 @@
 {
 "rewrites":[
 {
-"source":"https://github.com/vaibhav-1-kaushik/Learner.git","destination":"/"
+"source":"/","destination":"/"
 }
 ]
 }
